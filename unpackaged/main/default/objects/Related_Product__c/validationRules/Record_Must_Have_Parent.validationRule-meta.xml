@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Record_Must_Have_Parent</fullName>
+    <active>true</active>
+    <description>Ensures one of the Regime/Prescription/Patient Order fields are populated. **The "Patient Name" and "Patient" formula fields rely on this validation rule being active**</description>
+    <errorConditionFormula>AND(ISBLANK(Regime__c),
+ISBLANK(Prescription__c),
+ISBLANK(Patient_Order__c))</errorConditionFormula>
+    <errorMessage>Please populate either the Regime, Patient Order or Prescription lookup. (Only one of the three)</errorMessage>
+</ValidationRule>

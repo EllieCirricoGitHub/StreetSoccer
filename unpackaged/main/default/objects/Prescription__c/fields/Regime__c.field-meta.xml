@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regime__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Regime</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>Regime must be for same Patient</errorMessage>
+        <filterItems>
+            <field>Regime__c.Patient__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Patient__c</valueField>
+        </filterItems>
+        <infoMessage>Regime must be for same Patient</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Regime__c</referenceTo>
+    <relationshipLabel>Prescriptions</relationshipLabel>
+    <relationshipName>Prescriptions</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

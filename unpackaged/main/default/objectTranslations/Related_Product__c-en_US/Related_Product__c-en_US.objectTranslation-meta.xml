@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Related Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Related Products</value>
+    </caseValues>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <layouts>
+        <layout>Related Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <description><!-- Used for after a record has been created and saved --></description>
+        <label><!-- Live Related Product --></label>
+        <name>Live_Related_Product</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Used for when users initially create the record --></description>
+        <label><!-- New Related Product --></label>
+        <name>New_Related_Product</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please link to only a Regime, Prescription or Patient Order. For example, you cannot link to both a Regime and a Prescription. The Prescription links to the Regime by default so this is not necessary. --></errorMessage>
+        <name>More_Than_1_Parent_Selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The product you have selected is not on this patient&apos;s regime. Please review with their dietician. --></errorMessage>
+        <name>Product_Must_be_Regime_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Product is not listed as appropriate for the patient&apos;s condition. Please review the selection or discuss with a staff member that manages product listings. --></errorMessage>
+        <name>Product_Not_Appropriate_for_Patient_Diag</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please populate either the Regime, Patient Order or Prescription lookup. (Only one of the three) --></errorMessage>
+        <name>Record_Must_Have_Parent</name>
+    </validationRules>
+</CustomObjectTranslation>

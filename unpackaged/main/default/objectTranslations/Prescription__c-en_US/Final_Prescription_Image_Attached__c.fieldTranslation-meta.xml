@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Do not check this box until you have uploaded an image of the prescription that is approved for use. --></help>
+        <label><!-- Final Prescription Image Attached --></label>
+        <name>Final_Prescription_Image_Attached__c</name>
+    </CustomFieldTranslation>

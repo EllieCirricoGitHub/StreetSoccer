@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Regime --></label>
+        <lookupFilter>
+            <errorMessage><!-- Regime must be for same Patient --></errorMessage>
+            <informationalMessage><!-- Regime must be for same Patient --></informationalMessage>
+        </lookupFilter>
+        <name>Regime__c</name>
+        <relationshipLabel><!-- Prescriptions --></relationshipLabel>
+    </CustomFieldTranslation>

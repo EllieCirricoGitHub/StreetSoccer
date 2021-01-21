@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Generate_Prescription</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Generate Prescription</masterLabel>
+    <openType>noSidebar</openType>
+    <protected>false</protected>
+    <url>https://composer.congamerge.com
+?serverUrl={!API.Partner_Server_URL_370}
+&amp;id={!Prescription__c.Id}
+&amp;QueryId=a0B4K000001F9pKUAS
+&amp;pv0=a014K00000CRufKQAT
+&amp;CongaEmailTemplateId=a0A4K000004vYyJUAU</url>
+</WebLink>

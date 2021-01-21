@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Patient_Diagnosis__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>If Price Books get used for any other purpose in the future, a flag will be needed to separate the original ones representative of Patient Diagnoses so that this lookup can be filtered/validated.</description>
+    <externalId>false</externalId>
+    <label>Patient Diagnosis</label>
+    <referenceTo>Pricebook2</referenceTo>
+    <relationshipLabel>Patients Diagnosed</relationshipLabel>
+    <relationshipName>Contacts</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

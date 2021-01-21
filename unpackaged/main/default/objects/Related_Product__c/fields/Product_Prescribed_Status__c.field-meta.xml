@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Prescribed_Status__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Quantity__c = Received_Quantity__c, "Match",
+
+IF(AND(Received_Quantity__c &lt;&gt; 0, Quantity__c &gt; Received_Quantity__c),"Lower Quantity Received",
+
+IF( Received_Quantity__c = 0,"Not Received",
+
+IF(AND(Quantity__c &lt;&gt; 0, Quantity__c &lt;  Received_Quantity__c),"Higher Quantity Received",
+
+IF( Quantity__c = 0 &amp;&amp; Received_Quantity__c  &gt;= 1,"Received but not Requested",
+
+"Missing Quantity Data")))))</formula>
+    <inlineHelpText>This field displays results based on comparison between the Quantity that was requested and the Received Quantity prescribed by the GP.</inlineHelpText>
+    <label>Product Prescribed Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

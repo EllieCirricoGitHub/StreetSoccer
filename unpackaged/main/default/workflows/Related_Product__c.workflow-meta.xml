@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?><Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>Change_Record_Type</fullName>
+        <description>Changes Record Type to 'Live Related Product'</description>
+        <field>RecordTypeId</field>
+        <lookupValue>Live_Related_Product</lookupValue>
+        <lookupValueType>RecordType</lookupValueType>
+        <name>Change Record Type</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>LookupValue</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <rules>
+        <fullName>Set Live Record Type</fullName>
+        <actions>
+            <name>Change_Record_Type</name>
+            <type>FieldUpdate</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Related_Product__c.Quantity__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <description>Changes the Record Type from 'New' to 'Live' so that the required Lightning Page will be displayed for users.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+</Workflow>

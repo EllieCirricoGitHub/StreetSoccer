@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Patient --></label>
+        <lookupFilter>
+            <errorMessage><!-- Must be a Contact of Type Patient. --></errorMessage>
+            <informationalMessage><!-- Must be a Contact of Type Patient. --></informationalMessage>
+        </lookupFilter>
+        <name>Patient__c</name>
+        <relationshipLabel><!-- Regimes --></relationshipLabel>
+    </CustomFieldTranslation>

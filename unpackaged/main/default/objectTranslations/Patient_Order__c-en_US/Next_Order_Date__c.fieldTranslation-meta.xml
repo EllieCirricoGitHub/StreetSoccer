@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Once the patient has received this order, when would they be due to receive the next? --></help>
+        <label><!-- Next Order Date --></label>
+        <name>Next_Order_Date__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Primary_HCP__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>Who is the primary healthcare professional or dietician for this patient. This dictates access for the portal, so ensure the right Contact is selected.</inlineHelpText>
+    <label>Primary HCP</label>
+    <referenceTo>Contact</referenceTo>
+    <relationshipLabel>Patients</relationshipLabel>
+    <relationshipName>Patients</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Lookup</type>
+</CustomField>

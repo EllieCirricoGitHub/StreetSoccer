@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- How many, if any, of this item requested for the Prescription were received? If this item was not requested in the Prescription but will be kept, please enter the &apos;Quantity&apos; as 0 and the &apos;Received Quantity&apos; as the amount that has been prescribed. --></help>
+        <label><!-- Received Quantity --></label>
+        <name>Received_Quantity__c</name>
+    </CustomFieldTranslation>

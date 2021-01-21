@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows users to create a Price Book Listing directly from the Product record</description>
+    <fieldOverrides>
+        <field>Name</field>
+        <formula>Product2.Name</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Product_Code__c</field>
+        <formula>Product2.ProductCode</formula>
+    </fieldOverrides>
+    <label>Add to Price Book</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Product__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Price_Book__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>IsActive__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <successMessage>Price Book Listing Created!</successMessage>
+    <targetObject>Price_Book_Listing__c</targetObject>
+    <targetParentField>Product__c</targetParentField>
+    <type>Create</type>
+</QuickAction>

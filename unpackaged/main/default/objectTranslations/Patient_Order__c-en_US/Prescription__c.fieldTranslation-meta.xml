@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Prescription --></label>
+        <lookupFilter>
+            <errorMessage><!-- Prescription must be for same patient as order --></errorMessage>
+            <informationalMessage><!-- Prescription must be for same patient as order --></informationalMessage>
+        </lookupFilter>
+        <name>Prescription__c</name>
+        <relationshipLabel><!-- Patient Orders --></relationshipLabel>
+    </CustomFieldTranslation>

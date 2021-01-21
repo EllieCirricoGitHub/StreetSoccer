@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+                <label>On Hold</label>
+            </value>
+            <value>
+                <fullName>Pending</fullName>
+                <default>false</default>
+                <label>Pending</label>
+            </value>
+            <value>
+                <fullName>Stock Ordered</fullName>
+                <default>false</default>
+                <label>Stock Ordered</label>
+            </value>
+            <value>
+                <fullName>Stock Received</fullName>
+                <default>false</default>
+                <label>Stock Received</label>
+            </value>
+            <value>
+                <fullName>Delivery Booked</fullName>
+                <default>false</default>
+                <label>Delivery Booked</label>
+            </value>
+            <value>
+                <fullName>Delivered</fullName>
+                <default>false</default>
+                <label>Delivered</label>
+            </value>
+            <value>
+                <fullName>Order Skipped</fullName>
+                <default>false</default>
+                <label>Order Skipped</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Not_Appropriate_for_Patient_Diag</fullName>
+    <active>true</active>
+    <description>Checks against the Patient on the Regime/Prescription/Patient Order record to ensure that the Product is listed against the diagnosis Price Book.</description>
+    <errorConditionFormula>NOT(ISBLANK(Regime__c)) &amp;&amp;
+Product__r.Price_Book__c &lt;&gt;   Regime__r.Patient__r.Patient_Diagnosis__c
+
+||
+
+NOT(ISBLANK(Prescription__c )) &amp;&amp;
+Product__r.Price_Book__c &lt;&gt;    Prescription__r.Patient__r.Patient_Diagnosis__c 
+
+||
+
+NOT(ISBLANK(Patient_Order__c)) &amp;&amp;
+Product__r.Price_Book__c &lt;&gt;   Patient_Order__r.Patient__r.Patient_Diagnosis__c</errorConditionFormula>
+    <errorMessage>This Product is not listed as appropriate for the patient's condition. Please review the selection or discuss with a staff member that manages product listings.</errorMessage>
+</ValidationRule>

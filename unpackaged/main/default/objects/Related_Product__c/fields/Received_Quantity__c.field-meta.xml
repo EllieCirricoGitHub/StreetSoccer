@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Received_Quantity__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>How many, if any, of this item requested for the Prescription were received? If this item was not requested in the Prescription but will be kept, please enter the 'Quantity' as 0 and the 'Received Quantity' as the amount that has been prescribed.</inlineHelpText>
+    <label>Received Quantity</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

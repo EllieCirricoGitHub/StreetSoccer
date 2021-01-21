@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>More_Than_1_Parent_Selected</fullName>
+    <active>true</active>
+    <description>Prevents users from populating one out of the Regime/Prescription/Patient Order fields. **"Patient Name" formula field on this object, relies on this. Other formulas rely on that field also.**</description>
+    <errorConditionFormula>(
+ IF(ISBLANK(Regime__c),1,0)
+ + IF(ISBLANK(Prescription__c),1,0)
+ + IF(ISBLANK(Patient_Order__c),1,0)
+) &lt; 2</errorConditionFormula>
+    <errorMessage>Please link to only a Regime, Prescription or Patient Order. For example, you cannot link to both a Regime and a Prescription. The Prescription links to the Regime by default so this is not necessary.</errorMessage>
+</ValidationRule>

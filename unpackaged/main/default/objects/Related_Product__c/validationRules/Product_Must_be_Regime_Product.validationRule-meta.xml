@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_Must_be_Regime_Product</fullName>
+    <active>true</active>
+    <description>For Related Products against Patient Orders or Prescriptions, a before-save flow runs to check if the selected Product is listed on the patient's regime. If it is not, the 'Regime Product?' checkbox will remain un-checked and this rule will fire.</description>
+    <errorConditionFormula>ISBLANK(Regime__c)
+
+&amp;&amp;
+
+Regime_Product__c = FALSE</errorConditionFormula>
+    <errorMessage>The product you have selected is not on this patient's regime. Please review with their dietician.</errorMessage>
+</ValidationRule>

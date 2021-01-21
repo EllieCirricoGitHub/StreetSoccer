@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Parent_Record_Object__c</fullName>
+    <description>Used to avoid having to create this formula/filter.</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK( Regime__c)), "Regime",
+
+IF(NOT(ISBLANK( Prescription__c)), "Prescription",
+
+IF(NOT(ISBLANK( Patient_Order__c)), "Patient Order",
+
+"One and only one field should be populated from the following: Regime, Prescription, Patient Order. Please review to allow this field to function"
+
+)))</formula>
+    <inlineHelpText>This field should read either 'Regime', 'Prescription' or 'Patient Order' - based on which has been populated.</inlineHelpText>
+    <label>Parent Record Object</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

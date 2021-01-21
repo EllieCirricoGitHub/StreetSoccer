@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Regime__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Regime</label>
+    <lookupFilter>
+        <active>true</active>
+        <errorMessage>The Regime must be for the same patient and be marked as 'Active'. If there are no results, please review the patient's Regimes.</errorMessage>
+        <filterItems>
+            <field>$Source.Patient__c</field>
+            <operation>equals</operation>
+            <valueField>Regime__c.Patient__c</valueField>
+        </filterItems>
+        <filterItems>
+            <field>Regime__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Active, Pending</value>
+        </filterItems>
+        <infoMessage>The Regime must be for the same patient and be marked as 'Active'. If there are no results, please review the patient's Regimes.</infoMessage>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Regime__c</referenceTo>
+    <relationshipLabel>Patient Orders</relationshipLabel>
+    <relationshipName>Patient_Orders</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

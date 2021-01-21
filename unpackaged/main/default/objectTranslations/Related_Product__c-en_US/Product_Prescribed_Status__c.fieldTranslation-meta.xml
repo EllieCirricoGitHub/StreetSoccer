@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- This field displays results based on comparison between the Quantity that was requested and the Received Quantity prescribed by the GP. --></help>
+        <label><!-- Product Prescribed Status --></label>
+        <name>Product_Prescribed_Status__c</name>
+    </CustomFieldTranslation>
